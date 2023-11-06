@@ -1,0 +1,167 @@
+/* Question 1 */
+
+header > img {
+    width: 475px;
+    animation: logo 5s;
+}
+
+@keyframes logo {
+    from {opacity: 0; width: 25px;}
+    to {opacity: 1; width: 475px;}
+}
+
+
+/* Question 2 */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1f1f1 url(../images/concrete_seamless.png);
+}
+
+/* Question 3 */
+header > img{
+    display: flex;
+    margin: auto;
+}
+
+/* Question 4 */
+.nav_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Question 5 */
+.nav_item a:link, .nav_item a:visited {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Question 6 */
+.card > header {
+    background: #288088;
+    border: solid 2px #45ADAD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px 50px 0 0;
+}
+
+.card {
+    border-radius: 50px 50px 0 0;
+}
+
+/* Question 7 */
+.card {
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+}
+
+/* Question 8 */
+.pricing {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Question 9 */
+.gallery > img {
+    border: solid 10px #50C7C7;
+    margin: 10px;
+    width: 300px;
+}
+
+/* Question 10 */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (min-width: 900px) {
+    /* Question 11 */
+    body > header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header > img{
+        display: flex;
+        margin: 0;
+    }
+
+    .nav_links {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Question 12 */
+    .card {
+        display: flex;
+        width: 275px;
+    }
+
+    .pricing {
+
+    }
+
+    /* Question 13 */
+    body > header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+}
+
+/* Question 14 */
+@media (prefers-reduced-motion: reduce) {
+    #logo {
+        animation: none;
+    }
+}
+
+
+@media print {
+    /* Question 15 & 16 */
+    body {
+        font-family: Arial, Helvetica;
+        background: #f1f1f1
+    }
+
+    /* Question 17 */
+    .nav_links {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* Question 18 */
+    .pricing {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    /* Question 19 */
+    .card {
+        display: flex;
+        height: 325px;
+        border: 2px solid #45ADDD;
+    }
+
+    /* Question 20 */
+    #gallery {
+        display: none;
+    }
+
+    .gallery {
+        display: none;
+    }
+
+    /* Question 21 */
+}
