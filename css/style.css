@@ -53,7 +53,7 @@ header > img{
 /* Question 7 */
 .card {
     display: flex;
-    width: 450px;
+    flex-basis: 450px;
     flex-direction: column;
 }
 
@@ -94,17 +94,18 @@ header > img{
 
     .nav_links {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 
     /* Question 12 */
     .card {
         display: flex;
-        width: 275px;
+        flex-basis: 275px;
     }
 
-    .pricing {
-
+    .card > header > h3 {
+        text-align: left;
     }
 
     /* Question 13 */
@@ -130,6 +131,7 @@ header > img{
 @media print {
     /* Question 15 & 16 */
     body {
+        flex-direction: column;
         font-family: Arial, Helvetica;
         background: #f1f1f1
     }
@@ -137,21 +139,21 @@ header > img{
     /* Question 17 */
     .nav_links {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
     /* Question 18 */
     .pricing {
         display: flex;
-        flex-flow: row wrap;
+        flex-wrap: nowrap;
         justify-content: center;
-        align-content: center;
+        align-items: flex-end;
     }
     /* Question 19 */
     .card {
         display: flex;
-        height: 325px;
-        border: 2px solid #45ADDD;
+        flex-basis: 325px;
     }
 
     /* Question 20 */
@@ -164,4 +166,7 @@ header > img{
     }
 
     /* Question 21 */
+    .card > ul > li:nth-of-type(2)::after {
+        content: " 👍";
+    }
 }
